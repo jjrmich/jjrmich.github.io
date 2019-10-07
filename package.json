@@ -1,0 +1,18 @@
+{
+  "name": "jjrmich.github.io",
+  "version": "0.1.0",
+  "description": "personal webpage for Joshua Richter",
+  "main": "index.js",
+  "repository": "https://github.com/jjrmich/jjrmich.github.io",
+  "author": "Joshua Richter <jjrmich@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "jquery": "^3.4.1",
+    "popper.js": "^1.15.0",
+    "webpack": "^4.41.0"
+  },
+  "scripts": {
+    "build": "webpack"
+  }
+}
