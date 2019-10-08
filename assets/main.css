@@ -2,3 +2,16 @@
   width: 100%;
   max-width: 400px;
 }
+
+body#dark {
+  color: #f8f9fa;
+  background-color: #353a40;
+}
+
+#dark .bg-light {
+  background-color: #262b2f!important;
+}
+
+#dark a {
+  color: #4c7bad;
+}
