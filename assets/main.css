@@ -1,11 +1,19 @@
-.pfp {
-  width: 100%;
-  max-width: 400px;
+img {
+  max-width: 100%;
+  padding: 0 2em;
 }
+
+/* .pfp {
+  width: 100%;
+} */
 
 body#dark {
   color: #f8f9fa;
   background-color: #353a40;
+}
+
+#dark .nav-tabs .nav-link:focus, #dark .nav-tabs .nav-link:hover {
+  border-color: #1d2022 #1d2022 #262b2f;
 }
 
 #dark .bg-light {
