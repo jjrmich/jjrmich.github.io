@@ -14,30 +14,56 @@
       // https://kevinchen.co/blog/support-macos-mojave-dark-mode-on-websites/
       var mql = window.matchMedia("(prefers-color-scheme: dark)");
       function setDark(e) {
-          document.body.id = (e.matches ? "dark" : "");
+        document.body.id = (e.matches ? "dark" : "");
       }
       mql.addListener(setDark);
       document.addEventListener("DOMContentLoaded", function() {
-          setDark(mql);
+        setDark(mql);
       });
     </script>
+
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <title>Josh Richter</title>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg bg-light">
       <a class="navbar-brand" href="#">Josh Richter</a>
     </nav>
-    <div class="container py-3">
-      <div class="row">
-        <div class="col-md-12">
-            <h1>Hello World</h1>
-        </div>
+    <div class="container">
+      <div class="row py-3"> 
         <div class="col-md-3">
           <img src="assets/josh-linkedin.jpg" class="rounded pfp" alt="Josh's Picture">
         </div>
         <div class="col-md-9">
+          <h2>About Me</h2>
           This page is currently a work-in-progress, meant to eventually showcase various projects I have
           worked on during my time as a programmer.
+          <!-- <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-3">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-linkedin"></a>
+            </div>
+            <div class="col-md-3"></div>
+          </div> -->
+        </div>
+      </div>
+      <div class="row py-3">
+        <div class='col-12'>
+          <h2>Work Experience</h2>
+          <nav>
+            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+              <a class="nav-item nav-link active" id="nav-msu-tab" data-toggle="tab" href="#nav-msu" role="tab" aria-controls="nav-msu" aria-selected="true">MSU RHA</a>
+              <a class="nav-item nav-link" id="nav-4thought-tab" data-toggle="tab" href="#nav-4thought" role="tab" aria-controls="nav-4thought" aria-selected="false">4Thought Studios</a>
+            </div>
+          </nav>
+          <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="nav-msu" role="tabpanel" aria-labelledby="nav-msu-tab">...</div>
+            <div class="tab-pane fade" id="nav-4thought" role="tabpanel" aria-labelledby="nav-4thought-tab">...</div>
+          </div>
         </div>
       </div>
     </div>

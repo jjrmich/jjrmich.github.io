@@ -15,3 +15,24 @@ body#dark {
 #dark a {
   color: #4c7bad;
 }
+
+.nav-tabs .nav-link {
+  font-size: 0.8em;
+}
+
+@media (min-width: 576px) {
+  .nav-tabs .nav-link {
+    font-size: 1em;
+  }
+}
+
+#dark .nav-tabs {
+  border-bottom: 1px solid #1d2022;
+}
+
+#dark .nav-tabs .nav-item.show .nav-link, 
+#dark .nav-tabs .nav-link.active {
+  color: #f8f9fa;
+  background-color: #262b2f;
+  border-color: #1d2022 #1d2022 #262b2f;
+}
