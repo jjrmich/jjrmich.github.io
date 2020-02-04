@@ -3,6 +3,10 @@ img {
   padding: 0 2em;
 }
 
+#dark img:not([src*=".svg"]) {
+  filter: grayscale(25%);
+}
+
 /* .pfp {
   width: 100%;
 } */
