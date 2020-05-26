@@ -48,3 +48,15 @@ body#dark {
   background-color: #262b2f;
   border-color: #1d2022 #1d2022 #262b2f;
 }
+
+.icon-link:hover {
+  text-decoration: none;
+}
+
+.icon-link {
+  font-size: 1.6rem;
+}
+
+.navbar-brand {
+  font-family: 'Courier New', Courier, monospace;
+}
