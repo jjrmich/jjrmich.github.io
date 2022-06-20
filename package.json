@@ -5,7 +5,8 @@
   "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack"
+    "build": "webpack",
+    "deploy": "gh-pages -d dist"
   },
   "repository": "https://github.com/jjrmich/jjrmich.github.io",
   "author": "Josh Richter",
@@ -14,6 +15,7 @@
     "autoprefixer": "^10.4.7",
     "css-loader": "^6.7.1",
     "file-loader": "^6.2.0",
+    "gh-pages": "^4.0.0",
     "postcss-loader": "^7.0.0",
     "sass": "^1.52.3",
     "sass-loader": "^13.0.0",
