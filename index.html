@@ -31,36 +31,121 @@
       <div class="alert alert-danger my-2" role="alert">
         This page is currently a <b>work in progress</b>.
       </div>
-      <div class="row justify-content-start my-5 ml-5">
+      <div class="row justify-content-center justify-content-md-start my-4">
         <div class="col placeholder-col">
           <svg class="placeholder-img" width="300" height="300" role="img">
             <rect width="100%" height="100%" fill="#868e96"></rect>
             <text x="50%" y="50%" fill="#dee2e6" dy=".3em">Placeholder</text>
           </svg>
         </div>
-        <div class="col-sm-5">
+        <div class="mt-3 mt-md-0 col-md-5">
           <h1>Hey there! 👋</h1>
           <p>My name is <b>Josh Richter</b> and I'm a software developer. I have a passion for creating projects that are functional and streamlined, with a strong emphasis on quality UI/UX. </p>
         </div>
       </div>
       <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-4 card-col">
           <div class="card">
             <div class="card-body">
               <h5 class="card-title">Education</h5>
               <p class="card-text">
                 In May 2019, I graduated from Michigan State University with a B.S. in Computer Engineering.
                 Most coding was done in Python and C++, setting a strong foundation for other coding 
-                languages in the future. More details can be found in my resume.
+                languages in the future. Courses of interest include <b>Algorithms and Data Structures</b> and <b>Object Oriented Programming</b>
               </p>
             </div>
           </div>
         </div>
-        <div class="col-md-8">
+        <div class="col-md-8 card-col">
           <div class="card">
             <div class="card-body">
               <h5 class="card-title">Experience</h5>
-              <p class="card-text">test</p>
+              <ul class="nav nav-tabs nav-custom-tabs" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link active"
+                    id="ford-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#ford-tab-pane"
+                    type="button"
+                    role="tab"
+                    aria-controls="ford-tab-pane"
+                    aria-selected="true"
+                  >
+                    Ford
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="rocket-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#rocket-tab-pane"
+                    type="button"
+                    role="tab"
+                    aria-controls="rocket-tab-pane"
+                    aria-selected="false"
+                  >
+                    Rocket
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="fourThought-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#fourThought-tab-pane"
+                    type="button"
+                    role="tab"
+                    aria-controls="fourThought-tab-pane"
+                    aria-selected="false"
+                  >
+                    4Thought
+                  </button>
+                </li>
+              </ul>
+              <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="ford-tab-pane" role="tabpanel" aria-labelledby="ford-tab" tabindex="0">
+                  <div class="p-2">
+                    <h4 class="mb-0">Ford Motor Company</h4>
+                    <h5>Software Engineer</h5>
+                    <h6>May 2022 - Present</h6>
+                    <ul class="mb-0">
+                      <li>Built RESTful APIs using Java and Spring framework</li>
+                      <li>Developer portal built using React</li>
+                      <li>Deployment handled through Jenkins</li>
+                      <li>Various scripts for development and data parsing built using Python</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="rocket-tab-pane" role="tabpanel" aria-labelledby="rocket-tab" tabindex="1">
+                  <div class="p-2">
+                    <h4 class="mb-0">Rocket Mortgage</h4>
+                    <h5>Associate Software Engineer</h5>
+                    <h6>June 2020 - December 2021</h6>
+                    <ul class="mb-0">
+                      <li>Created and maintained an Angular application</li>
+                      <li>Project created using Angular v9 in VS Code, and C# in Rider</li>
+                      <li>Back end utilized DynamoDB in AWS</li>
+                      <li>Work I headed with a large business impact includes a Typescript overhaul to correct
+                        multiple 500+ line objects that were not typed correctly, and multiple
+                        custom field components for specific use cases</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="fourThought-tab-pane" role="tabpanel" aria-labelledby="fourThought-tab" tabindex="2">
+                  <div class="p-2">
+                    <h4 class="mb-0">4Thought Studios</h4>
+                    <h5>Developer</h5>
+                    <h6>May 2017 - June 2020</h6>
+                    <ul class="mb-0">
+                      <li>Collaborated with other developers to build a scheduling app for iOS and Android using React Native and TypeScript</li>
+                      <li>Played integral part in brainstorming sessions, design decisions, and new functionality</li>
+                      <li>Developed a website using VS Code, HTML, CSS, and React</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>

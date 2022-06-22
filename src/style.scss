@@ -1,7 +1,12 @@
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "variables";
+@import "~bootstrap/scss/mixins";
+@import "~bootstrap/scss/utilities";
 @import "~bootstrap/scss/bootstrap";
 @import "bootswatch";
-@import "variables";
-@import "custom";
+
+$primary: $green;
 
 .placeholder-img {
   text-anchor: middle;
@@ -10,4 +15,30 @@
 .placeholder-col {
   -ms-flex: 0 0 calc(300px + var(--bs-gutter-x));
   flex: 0 0 calc(300px + var(--bs-gutter-x));
+}
+
+.nav-custom-tabs {
+  border-color: transparent;
+  .nav-item {
+    margin-right: 0rem;
+  }
+  .nav-link {
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: $cyan;
+    &:hover,
+    &:focus {
+      border-color: transparent transparent $gray-200;
+    }
+  }
+  .nav-link.active,
+  .nav-item.show .nav-link {
+    background-color: transparent;
+    border-color: transparent transparent $gray-700;
+  }
+}
+
+.card-col {
+  padding-bottom: calc(var(--bs-gutter-x) * 0.5);
 }
