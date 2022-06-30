@@ -8,11 +8,7 @@
 
 $primary: $green;
 
-.placeholder-img {
-  text-anchor: middle;
-}
-
-.placeholder-col {
+.headshot-col {
   -ms-flex: 0 0 calc(300px + var(--bs-gutter-x));
   flex: 0 0 calc(300px + var(--bs-gutter-x));
 }

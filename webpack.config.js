@@ -55,6 +55,10 @@ module.exports = {
                 publicPath: '../webfonts',
             },
         }
+      },
+      {
+        test: /\.png$/,
+        use: 'file-loader'
       }
     ]
   }
